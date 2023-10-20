@@ -4,4 +4,4 @@
 <img src="./ScreenRecord_2.gif" width="50%"/>
 
 # LICENSE
-[LICENSE](LICENSE.md)
+[LICENSE](LICENSE)
