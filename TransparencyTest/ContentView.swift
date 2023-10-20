@@ -19,7 +19,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("NewFullScreenCover", systemImage: "globe")
                 }
-            
+            DrawerView()
+                .tabItem {
+                    Label("DrawerView", systemImage: "globe")
+                }
         }
     }
 }
