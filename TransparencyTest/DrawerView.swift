@@ -11,7 +11,6 @@ struct DrawerView: View {
     
     @State var showMenu: Bool = false
     
-    
     var body: some View {
         ZStack {
             VStack {
@@ -26,7 +25,6 @@ struct DrawerView: View {
             if showMenu {
                 DrawerMenu(showMenu: $showMenu)
                     .transition(.move(edge: .leading))
-                    .zIndex(1.0)
             }
             
         }
@@ -109,7 +107,7 @@ struct DrawerMenu: View {
 
 struct DrawerView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack { //PreviewのバグでVStackが必要。.transitionのために。
+        VStack { //need Vstack for Preview's bug
             DrawerView()
         }
     }
