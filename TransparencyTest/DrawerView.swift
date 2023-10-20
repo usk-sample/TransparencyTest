@@ -78,7 +78,7 @@ struct DrawerMenu: View {
                         }
 
                     }
-                    .font(.system(size: 11))
+                    .foregroundColor(.white)
                     .buttonStyle(.plain)
                     .padding(.horizontal, 40)
                     .padding(.bottom, 40)
@@ -88,7 +88,7 @@ struct DrawerMenu: View {
 
             }
             .frame(width: 288)
-            .background(.white)
+            .background(.black.opacity(0.7))
             .shadow(radius: 4)
             Color.clear.contentShape(Rectangle())
                 .onTapGesture {
