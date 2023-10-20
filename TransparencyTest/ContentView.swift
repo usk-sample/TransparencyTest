@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        TabView {
+            FullScreenCoverView()
+                .tabItem {
+                    Label("FullScreenCover", systemImage: "globe")
+                }
+            NewFullScreenCoverView()
+                .tabItem {
+                    Label("NewFullScreenCover", systemImage: "globe")
+                }
+            
         }
-        .padding()
     }
 }
 
